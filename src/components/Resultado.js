@@ -4,10 +4,12 @@ import {
   Text
 } from 'react-native';
 
-export default props => (
+const Resultado = props => (
     <Text>Resultado</Text>
 )
 
 const styles = StyleSheet.create({
   
 });
+
+export {Resultado}

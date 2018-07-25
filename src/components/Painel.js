@@ -4,10 +4,12 @@ import {
   Text
 } from 'react-native';
 
-export default props => (
+const Painel = props => (
     <Text>Painel</Text>
 )
 
 const styles = StyleSheet.create({
   
 });
+
+export {Painel}

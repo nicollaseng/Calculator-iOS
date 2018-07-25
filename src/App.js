@@ -5,9 +5,11 @@ import {
   Text,
   View
 } from 'react-native';
-import Topo from './components/Topo.js'
-import Resultado from './components/Resultado.js'
-import Painel from './components/Painel.js'
+// import Topo from './components/Topo.js'
+// import Resultado from './components/Resultado.js'
+// import Painel from './components/Painel.js'
+
+import {Painel, Topo, Resultado} from './components'
 
 export default props => (
     <View>

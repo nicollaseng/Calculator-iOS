@@ -4,10 +4,12 @@ import {
   Text
 } from 'react-native';
 
-export default props => (
+const Topo =  props => (
     <Text>Topo</Text>
 )
 
 const styles = StyleSheet.create({
   
 });
+
+export {Topo}
