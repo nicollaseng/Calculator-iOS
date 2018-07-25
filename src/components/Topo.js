@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
+import Cabecalho from './Cabecalho.js'
 import {
   StyleSheet,
   Text
 } from 'react-native';
 
 const Topo =  props => (
-    <Text>Topo</Text>
+    <Cabecalho />
 )
 
 const styles = StyleSheet.create({
