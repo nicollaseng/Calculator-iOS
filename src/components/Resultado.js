@@ -1,11 +1,12 @@
-import React, { Component } from 'react';
+import React from 'react';
+import Visor from './Visor.js'
 import {
   StyleSheet,
   Text
 } from 'react-native';
 
 const Resultado = props => (
-    <Text>Resultado</Text>
+    <Visor />
 )
 
 const styles = StyleSheet.create({
