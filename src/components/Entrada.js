@@ -1,8 +1,17 @@
 import React from 'react'
-import {View, Text} from 'react-native'
+import {View, StyleSheet} from 'react-native'
+import Numero from './Numero.js'
 
 export default props => (
-    <View>
-        <Text>Entrada</Text>
+    <View style={styles.generalView}>
+        <Numero />
+        <Numero />
     </View>
 )
+
+const styles = StyleSheet.create({
+    generalView: {
+        flexDirection: 'row',
+        justifyContent: 'space-between'
+    }
+})
