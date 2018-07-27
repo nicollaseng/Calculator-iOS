@@ -3,7 +3,7 @@ import {View, TextInput, StyleSheet} from 'react-native'
 
 export default props => (
     <View style={styles.viewInput}>
-      <TextInput placeholder="Insira um número" style={styles.input} />
+      <TextInput placeholder="Insira um número" style={styles.input} value={props.num} />
     </View>
 )
 
