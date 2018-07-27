@@ -1,11 +1,18 @@
 import React, { Component } from 'react';
+import Entrada from './Entrada.js'
+import Operacao from './Operacao.js'
+import Comando from './Comando.js'
 import {
   StyleSheet,
-  Text
+  View
 } from 'react-native';
 
 const Painel = props => (
-    <Text>Painel</Text>
+    <View>
+        <Entrada />
+        <Operacao />
+        <Comando />
+    </View>
 )
 
 const styles = StyleSheet.create({
