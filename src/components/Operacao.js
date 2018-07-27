@@ -1,8 +1,9 @@
 import React from 'react'
-import {View, Text} from 'react-native'
+import { Picker} from 'react-native'
 
 export default props => (
-    <View>
-        <Text>Operacao</Text>
-    </View>
+        <Picker>
+            <Picker.item label="Soma" value="soma" />
+            <Picker.item label="Subtracao" value="subtracao" />
+        </Picker>
 )
