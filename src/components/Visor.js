@@ -1,16 +1,21 @@
-import React, { Component } from 'react';
+import React from 'react';
 import {
   StyleSheet,
   Text,
-  View
+  View,
+  TextInput
 } from 'react-native';
 
 export default props => (
-   <View>
-       <Text>Visor</Text>
+   <View style={inputView}>
+       <TextInput placeholder="Digite aqui" style={{flex:1}}/>
     </View>
 )
 
 const styles = StyleSheet.create({
-  
+  inputView: {
+    height: 60
+  }
 });
+
+const {inputView} = styles
