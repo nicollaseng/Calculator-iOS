@@ -23,9 +23,10 @@ export default class Painel extends Component {
     console.log(resultado)
   }
 
-  atualizaValor(valor){
-    this.setState({num1: valor})
-    this.setState({num2: valor})
+  atualizaValor(nome,valor){
+    const obj = {}
+    obj[nome] = valor
+    this.setState(obj)
   }
 
   render(){
