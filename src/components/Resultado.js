@@ -9,8 +9,4 @@ const Resultado = props => (
     <Visor resultado={props.resultado}/>
 )
 
-const styles = StyleSheet.create({
-  
-});
-
 export {Resultado}
