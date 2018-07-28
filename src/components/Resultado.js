@@ -6,7 +6,7 @@ import {
 } from 'react-native';
 
 const Resultado = props => (
-    <Visor />
+    <Visor resultado={props.resultado}/>
 )
 
 const styles = StyleSheet.create({
