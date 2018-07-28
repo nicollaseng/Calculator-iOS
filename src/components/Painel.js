@@ -15,16 +15,24 @@ export default class Painel extends Component {
       num2: "25"
     }
     this.calcular = this.calcular.bind(this)
+    this.atualizaValor = this.atualizaValor.bind(this)
   }
 
   calcular(){
     var resultado = parseFloat(this.state.num1) + parseFloat(this.state.num2)
     console.log(resultado)
   }
+
+  atualizaValor(valor){
+    this.setState({num1: valor})
+    this.setState({num2: valor})
+  }
+
   render(){
       return(
         <View>
-            <Entrada num1={this.state.num1} num2={this.state.num2} />
+            <Entrada num1={this.state.num1} num2={this.state.num2}
+                     atualizaValor={this.atualizaValor} />
             <Operacao />
             <Comando acao={this.calcular}/>
         </View>

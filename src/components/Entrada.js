@@ -4,8 +4,8 @@ import Numero from './Numero.js'
 
 export default props => (
     <View style={styles.generalView}>
-        <Numero num={props.num1}/>
-        <Numero num={props.num2} />
+        <Numero num={props.num1} atualizaValor={props.atualizaValor}/>
+        <Numero num={props.num2} atualizaValor={props.atualizaValor}/>
     </View>
 )
 
