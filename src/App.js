@@ -34,8 +34,10 @@ export default class App extends Component {
         }else if(this.state.operacao === 'subtracao'){
             result = parseFloat(this.state.num1) - parseFloat(this.state.num2)
           console.log(result)
-        }else{
-          result = 0
+        }else if(this.state.operacao === 'multiplicacao'){
+            result = parseFloat(this.state.num1) * parseFloat(this.state.num2)
+        }else if(this.state.operacao === 'divisao'){
+            result = parseFloat(this.state.num1) / parseFloat(this.state.num2)
         }
         this.setState({
             resultado: result.toString()

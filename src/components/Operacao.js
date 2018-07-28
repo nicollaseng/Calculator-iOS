@@ -8,6 +8,8 @@ export default class Operacao extends Component {
                     onValueChange={valor => this.props.atualizaOperacao(valor)}>
                 <Picker.item label="Soma" value="soma" />
                 <Picker.item label="Subtracao" value="subtracao" />
+                <Picker.item label="Multiplicação" value="multiplicacao" />
+                <Picker.item label="Divisão" value="divisao" />
             </Picker>
         )
     }
